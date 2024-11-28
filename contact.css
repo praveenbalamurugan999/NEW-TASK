@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  font-family: "Montserrat";
+  background: url(nepal1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper{
+  margin-top: -330px;
+}
+
+.wrapper nav {
+  margin-top: 320px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(45deg,#ff009d,#ff5100);
+  transition: all 0.5s ease;
+  clip-path: circle(8% at 30px 40px);
+}
+.wrapper #check {display: none;}
+.wrapper .open {
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  left: 95%;
+  cursor: pointer;
+  background: linear-gradient(45deg,#ff009d,#ff5100);
+  color: #fff;
+  padding: 12px;
+  clip-path: circle();
+}
+.wrapper nav .close {
+  font-size: 2rem;
+  position: absolute;
+  top: 30px;
+  left: 96%;
+  cursor: pointer;
+  color: #fff;
+}
+.wrapper nav ul {
+  list-style: none;
+}
+.wrapper nav ul li a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+.wrapper nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: 0.3s ease;
+  background: #fff;
+}
+.wrapper nav ul li a:hover::after {
+  width: 100%;
+}
+.wrapper #check:checked ~ nav {
+  clip-path: circle(100%);
+  z-index: 1000;
+}
+
+.logoimg{
+  margin-top: -340px;
+  margin-left: 15px;
+  z-index: 1000;
+  position: absolute;
+}
+
+.logoimg img{
+  width: 90px;
+  z-index: 1000;
+  margin-top: 100px;
+  color: #000;
+  position: absolute;
+}
+
+/* nav completed */
+
+form{
+  border: 5px solid black;
+  border-radius: 40px;
+  height: 400px;
+  width: 400px;
+  align-content: center;
+  justify-items: center;
+  margin-left: 10%;
+  margin-top: 10px;
+  background: url(nepal1.avif);
+}
+
+.formh1 h1{ 
+  font-size: 70px;
+  margin-bottom: 60px;
+  margin-top: -150px;
+  margin-left: 130px;
+  text-decoration-line: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #ff009d;
+}
+
+textarea{
+  width: 165px;
+}
+
+input{
+  margin-bottom: 20px;
+}
+
+.sub button{
+  height: 30px;
+  width: 100px;
+  background-color: gray;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+.sub button:hover{
+  background-color: #ff009d;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px black;
+  font-weight: 600;
+}
+
+td{
+  color: white;
+  font-size: 20px;
+}
+
+.Contactss{
+  margin-top: -250px;
+  margin-left: 630px;
+  background-color: grey;
+  width: 850px;
+  height: 450px;
+}
+
+.Contactss p{
+  margin-top: 20px;
+  width: 800px;
+  margin-top: -400px;
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: black;
+  margin-left: 25px;
+}
+
+.contact{
+  margin-left: 40%;
+}
+
+.Contactss i
+{
+  display: inline-flex;
+  color: #ff009d;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 55px;
+  background: linear-gradient(130.08deg, #383528, 0%, #191919 100%);
+  box-shadow: 0px 20px 40px #00000070;
+  border: 1px solid #3b3b3b;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 0.6s ease-in-out;
+  margin-top: 75%;
+  margin: 0 5px;
+  
+}
+
+.Contactss i:hover
+{
+  transform: translate(-10px);
+  text-shadow: 0 0 5px #ff5100;
+  box-shadow: 0 0 5px #ff009d;
+}
+
+
+@media screen and (min-width:350px) and (max-width:420px)
+{
+  
+  .logoimg img{
+    width: 30px;
+    z-index: 1000;
+    margin-top: 100px;
+    color: #000;
+    position: absolute;
+  }
+
+  .formh1 h1{ 
+    font-size: 30px;
+    margin-bottom: 60px;
+    margin-top: -150px;
+    margin-left: 100px;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #ff009d;
+  }
+
+  form{
+    background: lightgreen;
+    border: 5px solid black;
+    border-radius: 40px;
+    height: 300px;
+    width: 300px;
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+
+  td{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  body {
+    font-family: "Montserrat";
+    background: lightgreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Contactss{
+    margin-top: 450px;
+    margin-left: 10px;
+    background-color: grey;
+    width: 350px;
+    height: 1050px;
+  }
+
+  .Contactss p{
+    margin-top: 20px;
+    width: 300px;
+    margin-top: -400px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
+    margin-left: 25px;
+  }
+
+  .contact{
+    margin-left: 20%;
+  }
+
+  .wrapper nav {
+    margin-top: 320px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(45deg,#ff009d,#ff5100);
+    transition: all 0.5s ease;
+    clip-path: circle(8% at 30px 40px);
+  }
+  .wrapper #check {display: none;}
+  .wrapper .open {
+    font-size: 2rem;
+    position: absolute;
+    top: -5px;
+    left: 79%;
+    cursor: pointer;
+    background: linear-gradient(45deg,#ff009d,#ff5100);
+    color: #fff;
+    padding: 12px;
+    clip-path: circle();
+  }
+  .wrapper nav .close {
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    left: 85%;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+}
+
+@media screen and (min-width:900px) and (max-width:1100px)
+{
+  .logoimg{
+    margin-top: -340px;
+    margin-left: 15px;
+    z-index: 1000;
+    position: absolute;
+  }
+  
+  .logoimg img{
+    width: 50px;
+    z-index: 1000;
+    margin-top: 100px;
+    color: #000;
+    position: absolute;
+  }
+
+  .wrapper nav {
+    margin-top: 320px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(45deg,#ff009d,#ff5100);
+    transition: all 0.5s ease;
+    clip-path: circle(8% at 30px 40px);
+  }
+  .wrapper #check {display: none;}
+  .wrapper .open {
+    font-size: 2rem;
+    position: absolute;
+    top: -5px;
+    left: 93%;
+    cursor: pointer;
+    background: linear-gradient(45deg,#ff009d,#ff5100);
+    color: #fff;
+    padding: 15px;
+    clip-path: circle();
+  }
+  .wrapper nav .close {
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    left: 95%;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  body {
+    font-family: "Montserrat";
+    background: lightseagreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .formh1 h1{ 
+    font-size: 70px;
+    margin-bottom: 60px;
+    margin-top: -150px;
+    margin-left: 30%;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #ff009d;
+  }
+
+  form{
+    border: 5px solid black;
+    border-radius: 40px;
+    height: 500px;
+    width: 600px;
+    align-content: center;
+    justify-items: center;
+    margin-left: 22%;
+    margin-top: 10px;
+    background: url(nepal1.avif);
+  }
+
+  input{
+    margin-bottom: 20px;
+  }
+  
+  .sub button{
+    height: 50px;
+    width: 130px;
+    background-color: gray;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: -80px;
+  }
+  
+  .sub button:hover{
+    background-color: #ff009d;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px black;
+    font-weight: 600;
+  }
+  
+  td{
+    color: white;
+    font-size: 30px;
+  }
+  
+  .Contactss{
+    margin-top: 450px;
+    margin-left: 50px;
+    background-color: grey;
+    width: 930px;
+    height: 450px;
+  }
+
+  .Contactss p{
+    margin-top: 20px;
+    width: 880px;
+    margin-top: -400px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 23px;
+    color: black;
+    margin-left: 25px;
+  }
+}
